@@ -1,9 +1,9 @@
 (define (domain logistic)
 
 (:predicates 
-(location ?l) (truck ?t) (package ?p) 
-(at-location-truck ?a) (at-location-package ?p ?l) 
-(truck-free ?t) (truck-loaded-package ?t ?p)
+    (location ?l) (truck ?t) (package ?p) 
+    (at-location-truck ?a) (at-location-package ?p ?l) 
+    (truck-free ?t) (truck-loaded-package ?t ?p)
 )
 
 (:action move-truck
@@ -24,4 +24,5 @@
     :effect (and (at-location-package ?p ?l) (truck-free ?t) (not (truck-loaded-package ?t ?p)))
 )
 
+)
 

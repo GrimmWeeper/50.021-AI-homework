@@ -1,0 +1,10 @@
+;;!domain: logistic
+;;!problem: logistic-delivery-simple
+
+0.00100: (move-truck tampines bedok)
+0.00200: (load-package package1 bedok truck)
+0.00300: (move-truck bedok changi)
+0.00400: (unload-package package1 changi truck)
+
+; Makespan: 0.004
+; Metric: 0.004
